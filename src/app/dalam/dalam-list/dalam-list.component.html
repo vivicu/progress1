@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-info">Tambah Daftar</button>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <a href="#" class="list-group-item clearfix"
+    *ngFor = "let dalam of dalams">
+      <span class="pull-left">
+        <img [src]="dalam.imagePath" alt="{{dalam.name}}" class="img-responsive" style="max-height:150px">
+      </span>
+      <div class="pull-right">
+        <h4 class="list-group-item-heading">{{dalam.name}}</h4>
+        <p class="list-group-item-text">{{dalam.tahun}}</p>
+        <p class="list-group-item-text">{{dalam.genre}}</p>
+        <p class="list-group-item-text">{{dalam.description}}</p>
+      </div>
+    </a>
+    <app-dalam-item></app-dalam-item>
+  </div>
+</div>
